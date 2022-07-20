@@ -1,0 +1,24 @@
+# Node label code
+# Edge label label code
+# Ncode code weight
+# Ecode code weight
+# Start label
+# Target label
+Ncode F -2
+Ncode B 5
+Node A F
+Node B B
+Node C F
+Node D B
+Ecode - 1
+Ecode X 2
+Edge A B -
+Edge A C -
+Edge B A X
+Edge B C X
+Edge B D X
+Edge C B -
+Edge C D -
+Edge C A X
+Start A
+Target D

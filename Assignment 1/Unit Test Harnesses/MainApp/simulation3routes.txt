@@ -1,0 +1,4 @@
+ACD : -2
+ABCD : 5
+ACBD : 5
+ABD : 6

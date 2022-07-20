@@ -1,0 +1,27 @@
+i) Binary Search Tree
+Traverse the tree and find the node to be deleted.
+If the node to be deleted is a leaf, then simply delete the value. 
+If the node to be deleted has only one child, then copy the child to the node and the remove the child.
+If the node has two children then get the leftmost child of the right subtree, copy the child to the node, and then remove the child.
+
+ii) Red-Black Tree
+
+A couple of conditions have to be satisfied when deleting a node in a RB tree. If the node we deleted has no children we can simply delete it.
+If the node we deleted has 1 child we can copy the child to the node and then remove the child.
+If the node we deleted has 2 children the right child will be the replacement.
+
+After deletion there are some more conditions to check. we need to ensure that the tree remains balanced, so we must change the colors, and rotate the parents accordingly.
+It is very complex with a multitude of conditions to check. Source: https://iq.opengenus.org/red-black-tree-deletion/
+
+iii) 2-3-4 Tree
+
+If it is a key in the leaf with no links we can delete with no repurcussions. 
+If it is not a leaf node we need to swap a predecessor or a successor and once we do that we can safely delete the predecessor from the leaf node.
+if we encounter a 2-node other than the root, we can convert it into a 3 node or 4 node, so when we reach the leaf it is guaranteed not to be a 2node so we can safely delete it.
+
+Source: http://www.cs.toronto.edu/~krueger/cscB63h/lectures/tut04.txt
+
+iv) B-Tree
+
+Just like 2-3-4 trees we use the same approach to ensure that B trees upon deletion does not face Underflow, so we promote predecessors. It is quite a similar approach as 2-3-4 trees
+but we benefit from most keys being in the leafs.

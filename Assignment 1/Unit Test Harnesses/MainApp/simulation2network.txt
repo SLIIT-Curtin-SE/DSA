@@ -1,0 +1,54 @@
+# Node label code
+# Edge label label code
+# Ncode code weight
+# Ecode code weight
+# Start label
+# Target label
+Ncode F -1
+Ncode T 1
+Ncode - 0
+Ncode D 100
+Ncode R 200
+Node G F
+Node I F
+Node B T
+Node A -
+Node C -
+Node D -
+Node E -
+Node F -
+Node J -
+Node Z R
+Ecode - 0
+Ecode X 10
+Edge A B -
+Edge A E -
+Edge B A -
+Edge B E -
+Edge B F -
+Edge B C -
+Edge C B -
+Edge C F -
+Edge C G -
+Edge C D -
+Edge D C -
+Edge D G -
+Edge E A -
+Edge E B -
+Edge E F -
+Edge F B -
+Edge F C -
+Edge F E -
+Edge F G -
+Edge F I -
+Edge G C -
+Edge G D -
+Edge G F -
+Edge G I -
+Edge I F -
+Edge I G -
+Edge I J -
+Edge J I -
+Edge J Z X
+Start A
+Target Z

@@ -1,0 +1,59 @@
+Insertion Sort
+Theoretical Performance
+- Best Case: Already Sorted O(n)
+- Worst Case: Sorted in the reverse order O(n^2)
+- Average Case: Random also O(n^2)
+
+Data Size | Average Case
+1000      | 241 ns
+10000     | 14172 ns
+100000    | 1375888 ns
+
+Discussion: This is a stable sort mostly useful in dealing with small datasets. However it is fairly evident that when the 
+dataset becomes larger that its inefficiencies and O(n^2) time complexity begins to show.
+
+_____________________________________________________
+QuickSort Sort
+Theoretical Performance
+- Best Case: Everytime we partition is halfs the list equally, this means the complexity is O(n log n) in time.
+- Worst Case: We have to partition the entire length of the list, O(n^2)
+- Average Case: Expectation of the quicksort is to take O(n log n) in general. Again depends on pivot, with the median of three pivot 
+being one of the more efficient pivots.
+
+Data Size | Average Case
+1000      | 52 ns
+10000     | 551 ns
+100000    | 6656 ns
+
+Discussion: Divide and Conquer algorithm. Performance depends on the pivot. O (n log n) complexity makes it ideal to deal with 
+large datasets as shown in the time. It is extremely smaller than the time taken by the Insertion Sort.
+
+_____________________________________________________
+Source: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object%5B%5D)
+Built-in Sort (Java's QuickSort)
+Theoretical Performance
+- Average Case: The only information was that it is in general a O(n log n) complexity algorithm and uses the Dual Pivot mechanism
+in contrast to the normal one pivot we use in the quicksort we have written. In some datasets it can degrade to quadratic. 
+
+Data Size | Average Case
+1000      | 95 ns
+10000     | 572 ns
+100000    | 5041 ns
+
+Discussion: Another more efficient divide and conquer algorithm that has a dual pivot. O (n log n) complexity, slightly faster than
+custom quick sort that we have written.
+_____________________________________________________
+
+Radix Sort Using MSD
+Theoretical Performance
+- Best Case: Best case is O(n), where ordering based on the bit sorts the entire list.
+- Worst Case: O(nm), where m is the average length of the key.
+- Average Case: On average works on O(nm) efficiency.
+
+Data Size | Average Case
+1000      | 85 ns
+10000     | 560 ns
+100000    | 4562 ns
+
+Discussion: Radix Sort is by far the fastest of the above three in terms of time complexity. The only downside of radix sort is that it can be affected by the number of characters
+/ length of the keys as it will have to do multiple passes on an average case. This is the bottleneck of the radix sort's speeds.
